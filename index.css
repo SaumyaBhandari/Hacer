@@ -1,0 +1,903 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+                                    /* css for the top component of the website */
+
+.topCover{
+    background-image: url(./Images/FrontPage/background2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+    justify-content: center;
+    width: 100%;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 94%, 46% 94%, 46% 100%, 0% 100%); */
+}
+
+#header{
+    height: 0px;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    transition-duration: .5s;
+}
+
+#headerLogoContent{
+    position: absolute;
+    transform: scale(0.6);
+    transition-duration: .5s;
+}
+
+
+
+
+.rectangle0{
+    position: absolute;
+    width: 118px;
+    height: 160px;
+    left: 63px;
+    /* box-shadow: 16px 16px 50px #999999, -16px 16px 80px #999999; */
+    top: 34px;
+    background: #ffffff;
+}
+
+.rectangle1{
+    position: absolute;
+    width: 118px;
+    height: 119px;
+    left: 63px;
+    /* box-shadow: 16px 16px 50px #999999, -16px 16px 80px #999999; */
+    top: 34px;
+    background: #010101;
+}
+
+.rectangle2{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 62px;
+    top: 83px;
+    background: #FFFFFF;
+}
+
+.rectangle3{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 85px;
+    top: 56px;background: #FFFFFF;
+}
+
+.rectangle4{
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    left: 109px;
+    top: 55px;
+    background: #010101;
+}
+
+.rectangle5{
+    position: absolute;
+    width: 26px;
+    height: 29px;
+    left: 109px;
+    top: 103px;
+    background: #010101;
+}
+
+.logoName{
+    position: absolute;
+    width: 119px;
+    height: 30px;
+    left: 63px;
+    top: 155px;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+}
+
+#ul{
+    float: right;
+    margin: 32px 64px 16px 16px;
+    transition-duration: .5s;
+}
+
+nav ul li{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0px 16px 0px 16px;
+    border: 1px;
+    padding: 16px 32px;
+    color: #FFFFFF;
+    transition-duration: 2s;
+    cursor: pointer;   
+}
+
+nav ul li a{
+    transition-duration: .1s;
+    padding-bottom: 2px;
+    color: #fff;
+    border-bottom: 0px solid white;
+    text-decoration: none;
+}
+
+nav ul li:hover a{
+    transition-duration: .1s;
+    border-bottom: 3px solid white;
+}
+
+#contact{
+    background-color: rgb(1, 154, 192);
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+
+
+.textComponent{
+    height: 200px;
+    width: 35%;
+    color: whitesmoke;
+    padding-top: 200px;
+    margin-left: 32.5%;
+    animation: appearfromtop .5s linear;
+    transition-duration: 1s;
+}
+
+.textComponent:hover .line{
+    animation: changeline 1s linear;
+    transition-duration: 1s;
+}
+
+.textComponent .mainText{
+    text-align: center;
+    /* font-family: 'Dancing Script', cursive; */
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Bold', sans-serif;
+    font-size: 96px;
+    letter-spacing: 8px;
+    animation: appear 2s ease;
+}
+
+
+.textComponent .tagline{
+    padding: 8px;
+    text-align: center;
+    font-size: 48px;
+    /* font-weight: bolder; */
+    animation: appearfromtop .5s linear;
+}
+
+.textComponent .landingShopButton{
+    font-size: 20px;
+    margin: 40px 34%;
+    font-weight: bolder;
+    padding: 16px 48px;
+    width: fit-content;
+    /* border-radius: 16px; */
+    background-color: rgb(255, 255, 255);
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+    transition-duration: .5s;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.textComponent .landingShopButton:hover{
+    background-color: transparent;
+    color: white;
+    transition-duration: .5s;
+}
+
+.moveArrows{
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 430px 50%;
+    height: 40px;
+}
+
+.downArrow1{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-align: center;
+    margin-top: 105px;
+}
+
+.downArrow2{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-align: center;
+    opacity: .9;
+    animation: moveArrow 1.5s infinite;
+}
+
+
+
+
+                                        /* css for the new arrivals section */
+
+
+
+
+.newArrivalContainer{
+    height: 800px;
+    margin-top: 0px;
+    padding: 24px;
+    color: #212121;
+    background-color: "#000";
+    background-attachment: fixed;
+    transform: scale(0.9);
+    opacity: 0;
+    transition-duration: 1s;
+}
+
+.newArrivalContainer #newArrival{
+    font-family: 'Impact', Haettenschweiler, 'Arial Bold', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.clothesDisplay{
+    margin-top: 64px;
+    height: 320px;
+    /* background-color: rgb(1, 154, 192); */
+}
+
+.cardColumn {
+    float: right;
+    width: 25%;
+    padding: 0px 32px;
+}
+  
+
+.card{
+    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.815);
+    padding: 16px;
+    height: 400px;
+    width: 90%;
+    text-align: center;
+    background-color: #ffffff;
+    animation: grow 2s;
+    transition-duration: .5s;
+    transform: scale(.99);
+}
+
+.card:hover{
+    transition-duration: .5s;
+    transform: scale(1.1);
+}
+
+.card .image{
+    margin: 0px 0px 0px 0px;
+    height: 220px; 
+    width: 100%; 
+    background: #212121;
+}
+
+.card .title{
+    margin: 8%;
+}
+
+.card .price{
+    margin: 4%;
+}
+
+.seeAllNewArrivalButton{
+    margin: 190px 0px 0px 0px;
+    text-align: center;
+}
+
+.seeAllNewArrivalButton h1{
+    font-family: cursive;
+    margin-left: 45%;
+    font-weight: bolder;
+    padding: 16px 48px;
+    width: fit-content;
+    /* border-radius: 16px; */
+    background-color: rgb(1, 154, 192);
+    color: #fff;
+    cursor: pointer;
+    transition-duration: .5s;
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.815);
+}
+
+.seeAllNewArrivalButton h1:hover{
+    box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.815), -10px 8px 16px 0 rgba(0, 0, 0, 0.815);
+    background-color: rgb(241, 241, 241);
+    /* border: 1px solid #212121; */
+    color: #212121;
+    transition-duration: .5s;
+}
+
+.newArrivalContainer .moveArrows{
+    color: #212121;
+    margin-top: 48px;
+}
+
+.moveArrows .downArrow3{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.moveArrows .downArrow4{
+    animation: moveArrow 2s infinite;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+
+                                            /* Css for the parallax 2 effect */
+
+
+.parallax2{
+    margin: 32px 0px;
+    background-image: url(images/FrontPage/parallax2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    
+}
+
+.parallax2 .textComponent{
+    padding: 32px 16px 16px 16px;
+    transform: scale(0.8);
+    height: 550px;
+    border: 8px solid white;
+}
+
+.parallax2 .textComponent .mainText{
+    margin-top: 48px;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 32px;
+    color:  #ffffff;
+}
+
+.parallax2 .textComponent .tagline{
+    margin-top: 48px;
+    font-size: 48px;
+    font-weight: bolder;
+    font-family: 'Dancing Script', Merriweather Sans;
+    color:  #ffffff;
+}
+
+.parallax2 .moveArrows{
+    margin-top: -120px;
+}
+
+
+
+
+
+                                    /* The effects for the about us section of the frontpage */
+
+
+
+.aboutUsSection{
+    height: 800px;
+    margin-top: 88px;
+    padding: 24px;
+    opacity: 0;
+    transform: scale(0.99);
+}
+
+.aboutUsSection .imageSection{
+    float: left;
+    width: 50%;
+
+}
+
+.aboutUsImageRow{
+    display: flex;
+    overflow: hidden;
+}
+
+.aboutUsSection .imageSection .aboutUsImageColumn{
+    float: left;
+    width: 50%;
+    padding: 5px;  
+    overflow: hidden;
+}
+
+
+
+.aboutUsSection .textSection{
+    float: right;
+    width: 49%;
+}
+
+.aboutUsSection .textSection h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    letter-spacing: 8px;
+    font-weight: bolder;
+    padding: 4px;
+    color: #212121;
+}
+
+.aboutUsSection .textSection p{
+    text-align: justify;
+    font-size: 24px;
+    padding: 26px;
+    line-height: 150%;
+    color: #212121;
+}
+
+.aboutUsSection .moveArrows{
+    margin-top: 750px;
+}
+
+.aboutUsSection .moveArrows .downArrow3{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.aboutUsSection .moveArrows .downArrow4{
+    animation: moveArrow 2s infinite;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+
+
+                                /* This is the css for the quiz section for the website */
+
+
+
+.quizSection{
+    background-image: linear-gradient(#3d3d3d, #212121);
+    margin-top: -100px;
+    padding: 48px;
+    height: 750px;
+    clip-path: polygon(50% 26%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.quizSection .quiz{
+    color: #fff;
+    text-align: center;
+    margin-top: 128px;
+}
+
+.quizSection .quiz .quizText{
+    margin-top: 32px;
+    float: left;
+    width: 48%;
+    transform: scale(0.9);
+}
+
+.quizSection .quiz .quizText h1{
+    padding: 24px;
+    font-size: 64px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.quizSection .quiz .quizText p{
+    padding: 24px;
+    font-size: 24px;
+    font-family:  cursive;
+}
+
+#quizbutton{
+    background-color: #eeeeee;
+    margin: 5% 35%;
+    /* border-radius: 16px; */
+    border: 2px solid white;
+    color: #000;
+    padding: 16px 24px;
+    width: fit-content;
+    font-weight: bolder;
+    cursor: pointer;
+    transition-duration: .2s;
+
+}
+
+#quizbutton:hover{
+    /* animation: bubble .5s ease; */
+    background-color: transparent;
+    color: white;
+    transition-duration: .2s;
+
+    /* box-shadow: 0px 8px 16px 0 rgba(255, 255, 255, 0.815); */
+}
+
+.quizSection .quiz .quizImages{
+    float: right;
+    width: 48%;
+    margin-top: 32px;
+    transform: scale(0.9);
+}
+
+.quizSection .quiz .quizImages img{
+    margin-top: 64px;
+    width: 90%;
+}
+
+.quizSection .moveArrows{
+    margin-top: 600px;
+}
+
+
+
+/* This is the css for the shop section of the website */
+
+.shopSection{
+    height: 1200px;
+    margin-top: 96px;
+    opacity: 0;
+}
+
+.shopSection .shopSectionTitle{
+    text-align: center;
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 64px;
+    letter-spacing: 8px;
+    padding: 4px;
+    color: #212121;
+    border-bottom: 4px solid #212121;
+    width: fit-content;
+    margin-left: 40%;
+}
+
+.shopSection .clothesDisplay .cardColumn{
+    width: 20%;
+    padding: 1%;
+    margin-top: 32px;
+}
+
+.shopSection .card{
+    transform: scale(0.9);
+}
+
+.shopSection .card:hover{
+    transform: scale(1);
+}
+
+
+.shopSection .moveArrows{
+    color: #212121;
+    padding-top: 130px;
+}
+
+
+
+                                    /* this is the css for the parallax effect after the shop section */
+
+
+
+.parallax3{
+    height: 800px;
+    background-image: url(Images/FrontPage/Screenshot\ \(13\).png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.parallax3 .textComponent{
+    padding-top: 190px;
+    float: right;
+    width: 100%;
+}
+
+.parallax3 .parallax3MainText{
+    padding: 24px 48px;
+    float: right;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.027);
+    border: 4px solid rgb(255, 255, 255);
+    transition-duration: 1s;
+}
+
+.parallax3 h1{
+    text-align: center;
+    font-size: 96px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);;
+}
+
+
+.parallax3 .moveArrows{
+    margin-top: 504px;
+}
+
+
+
+
+
+
+                                    /* this css is for message from BOD section */
+
+
+
+.messageFromBOD{
+    height: 800px;
+    text-align: center;
+    color: #212121;
+    padding: 32px;
+    transform: scale(0.9);
+    background-image: linear-gradient(#fff, #ffffff);
+}
+
+.messageFromBOD p{
+    margin-top: 100px; 
+    font-size: 32px;
+    text-align: center;
+}
+
+.messageFromBODImages {
+    padding-top: 0px;
+    width: 48%;
+    float: right;
+}
+.messageFromBODImages img{
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.messageFromBODText{
+    padding-top: 10px;
+    float: left;
+    width: 50%;
+}
+
+.messageFromBOD h1{
+    margin: 32px;
+    font-family: 'Impact', Haettenschweiler, 'Arial Bold', sans-serif;
+    letter-spacing: 8px;
+    font-size: 64px;
+    width: fit-content;
+}
+
+.messageFromBODText p{
+    font-size: 24px;
+    padding: 0px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.messageFromBOD .endingText{
+    text-align: left;
+    margin-top: 32px;
+    font-weight: bolder;
+    line-height: 150%;
+}
+
+
+
+                        /* this is the css for the footer */
+
+
+
+
+footer{
+    color: #fff;
+    height: 450px;
+    background-color: #212121;
+}
+
+.footer-top{
+    height: 35%;
+    padding: 6% 2% 0 36%;
+}
+
+.footer-top ul li{
+    display: inline;
+}
+
+.footer-top ul li a{
+    color: #fff;
+    border-right: 2px solid rgb(1, 154, 192);
+    border-left: 2px solid rgb(1, 154, 192);
+    padding: 0.5% 20px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Styling changed on hover: bottom border appears and color changes */
+.footer-top a:hover{
+    border-bottom: 2px solid rgb(1, 154, 192);
+}
+
+.footer-mid{
+    padding-top: 4%;
+    display: flex;
+    flex: wrap;
+}
+
+.footer-mid-size{
+    flex: 50%;
+    text-align: center;
+}
+
+
+.footer-mid-left img{
+    width: 35px; 
+    height: 35px;
+    margin: 4% 1%;
+    transition: .8s ;
+}
+
+/* Styling changed on hover: border and drop shadow appears */
+.footer-mid-left img:hover{
+    animation: bubble 1s linear;
+    padding: 0.5%;
+    filter: drop-shadow(0px 5px 3px rgb(1, 154, 192));
+}
+
+.footer-mid-center input[type="email"]{
+    display: inline-block;
+    height: 32%;
+    width: 50%;
+    margin: 2%;
+    padding: 2%;
+    font-size: medium;
+}
+
+footer button{
+    background-color: rgb(1, 154, 192);
+    margin: 2%;
+    border: none;
+    height: 32%;
+    width: 30%;
+    color: #fff;
+    margin-top: 3%;
+    font-size: larger;
+    transition: .9s linear;
+}
+
+
+footer button:hover{
+    background-color: #08A4BD;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.footer-mid-right{
+    text-align: right;
+    padding-right: 10%;
+    line-height: 200%;
+}
+
+.footer-mid-right h1{ 
+    color: rgb(1, 154, 192);
+}
+
+.footer-bottom{
+    height: 20%;
+    padding: 6% 1% 1% 40%;
+}
+
+                                        /* animations for different components of the css*/
+
+
+                                
+
+@keyframes changeline{
+    0%{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    20%{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    40%{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    60%{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    100%{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appearfromtop{
+    0%{
+        margin-top: -70px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes moveArrow{
+    0%{
+        margin-top: -72px;
+        opacity: 1;
+    }
+    100%{
+        margin-top: -16px;
+        opacity: 0.5;
+    }
+}
+
+@keyframes grow{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes bubble{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(.8);
+    }
+    40%{
+        transform: scale(1.1);
+    }
+    60%{
+        transform: scale(.8);
+    }
+    80%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes appearfromside{
+    0%{
+        margin-left: -50%;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes appearfromtop2nd{
+    0%{
+        margin-top: -70px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 88px;
+        opacity: 1;
+    }
+}

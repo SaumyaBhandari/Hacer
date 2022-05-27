@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <title>Hacer</title>
+</head>
+
+
+<body onscroll="checkOffset()" onload="openPage()">
+
+
+    <!-- this is the header of the website, logo is drawin, insted of keeping an image -->
+
+    <header id="header">
+
+        <div class="headerContents">
+            <div id="headerLogoContent">
+
+                <!-- drawing the image of the logo using css only -->
+
+                <div class="imageContent">
+                    <div class="rectangle0"></div>
+                    <div class="rectangle1"></div>
+                    <div class="rectangle2"></div>
+                    <div class="rectangle3"></div>
+                    <div class="rectangle4"></div>
+                    <div class="rectangle5"></div>
+                </div>
+
+                <h1 class="logoName">HACER</h1>
+
+            </div>
+
+            <!-- navigation content of the header -->
+
+            <div class="headerNavContents">
+                <nav>
+                    <ul id="ul">
+                        <li class="li"><a href="index.html">Home</a></li>
+                        <li class="li"><a href="about.html">About</a></li>
+                        <li class="li"><a href="">Shop</a></li>
+                        <li id="contact"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- the top content of the website; also known as the landing section of the website -->
+
+
+    <section class="topCover">
+
+        <!-- the landing text of the website -->
+
+        <div class="landingText">
+            <div class="textComponent"> 
+                <div class="mainText">Hacer</div>
+                <hr class="line">
+                <div class="tagline">Own It!!</div>
+                <div class="landingShopButton">Shop Now</div>
+
+                
+            </div>
+            <!-- these are the arrows when clicked, goes to the next part of the website -->
+            
+            <div class="moveArrows" onclick="scrollPage(1)">
+                <div class="downArrow1">V</div>
+                <div class="downArrow2">v</div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- this is the end of the top content of the website -->
+
+    <!-- here begins the new arrival section of the website -->
+
+    <section class="newArrivalSection">
+
+        <div class="newArrivalContainer">
+
+            <h1 id="newArrival">New Arrivals</h1>
+        
+
+            <div class="clothesDisplay">
+                <div class="cardRow">
+                    <div class="cardColumn">
+                        <div class="card">
+                            <div class="image">
+                                <div> </div>
+                            </div>
+                            <h1 class="title">Boatneck T-Shirt</h1>
+                            <h3 class="price">Price: Rs. 750/-</h3>
+                        </div>
+                    </div>
+                    <div class="cardColumn">
+                        <div class="card">
+                            <div class="image">
+                                <div> </div>
+                            </div>
+                            <h1 class="title">Regular T-Shirt</h1>
+                            <h3 class="price">Price: Rs. 750/-</h3>
+                        </div>
+                    </div>
+                    <div class="cardColumn">
+                        <div class="card">
+                            <div class="image">
+                                <div> </div>
+                            </div>
+                            <h1 class="title">Premium Shorts</h1>
+                            <h3 class="price">Price: Rs. 750/-</h3>
+                        </div>
+                    </div>
+                    <div class="cardColumn">
+                        <div class="card">
+                            <div class="image">
+                                <div> </div>
+                            </div>
+                            <h1 class="title">Dikachu Boxer</h1>
+                            <h3 class="price">Price: Rs. 750/-</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seeAllNewArrivalButton">
+                <h1>View All</h1>
+                <div class="underline"></div>
+            </div>
+
+            <div class="moveArrows" onclick="scrollPage(2)">
+                <div class="downArrow3">V</div>
+                <div class="downArrow4">v</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- This is the section of the second parallax of the frontpage -->
+
+
+    <section class="parallax2">
+        <div class="parallax2Properties">
+            <div class="parallax2Text">
+                <div class="textComponent"> 
+                    <div class="mainText">We Present You With</div>
+                    <hr class="line">
+                    <div class="tagline">The New Clothing Brand in Town</div>
+                </div>
+
+                <!-- these are the arrows when clicked, goes to the next part of the website -->
+                
+                <div class="moveArrows" onclick="scrollPage(3)">
+                    <div class="downArrow1">V</div>
+                    <div class="downArrow2">v</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- This is the short description of the Hacer Company -->
+
+    <section class="aboutUsSection">
+
+        <div class="imageSection">
+
+            <div class="aboutUsImageRow">
+                <div class="aboutUsImageColumn">
+                  <img src="Images/FrontPage/aboutUsImage4.jpg"  style="width:100%" onclick="showImage()">
+                </div>
+                <div class="aboutUsImageColumn">
+                  <img src="Images/FrontPage/aboutUsImage2.jpg"  style="width:100%" onclick="showImage()">
+                </div>
+            </div>
+              <div class="aboutUsImageRow">
+                <div class="aboutUsImageColumn">
+                  <img src="Images/FrontPage/aboutUsImage1.jpg"  style="width:100%" onclick="showImage()">
+                </div>
+                <div class="aboutUsImageColumn">
+                  <img src="Images/FrontPage/aboutUsImage3.jpg"  style="width:100%" onclick="showImage()">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="textSection">
+            <h1>About Hacer</h1>
+            <p>Straight out of the heart of Kathmandu, Nepal; we are proud to 
+                announce one of the leading clothing brand of Nepal: Hacer. We provide our 
+                customers the best quality T-shirts, Boxers and other large varities
+                of clothing materials with the finest fabric available and with the 
+                most affordable prices. Wearing clothes had never been so comfotable. 
+                Hacer is the fashion, the heart of the millenials and gen-z's fashion
+                choices. From streets to large corporate offices, Hacer is the sensational
+                trend that no one can be left unknown to.</p>
+        </div>
+
+        <!-- these are the arrows when clicked, goes to the next part of the website -->
+                
+        <div class="moveArrows" onclick="scrollPage(4)">
+            <div class="downArrow3">V</div>
+            <div class="downArrow4">v</div>
+        </div>
+
+    </section>
+
+    <!-- this is the section where the users can click a button and quiz section will be opened -->
+
+    <section class="quizSection">
+
+        <div class = "quiz">
+            
+            <div class="quizText">
+                <h1>Want to find out your style?</h1>
+                <p>Our complex machine learning AI will help you to choose
+                    your fashion.
+                Take a quiz below to find out your style.</p>
+                <p id = "quizbutton">Take a quiz</p>
+            </div>
+
+            <div class="quizImages">
+                <img src="Images/FrontPage/quizImage.jpg" alt="" srcset="">
+            </div>
+
+        </div>
+
+        <!-- these are the arrows when clicked, goes to the next part of the website -->
+                
+        <div class="moveArrows" onclick="scrollPage(5)">
+            <div class="downArrow1">V</div>
+            <div class="downArrow2">v</div>
+        </div>
+
+    </section>
+
+
+    <!--this is the shopping section of the website
+        this consists of the shopping components and brief desctiption of the products-->
+
+    <section class="shopSection">
+
+        <h1 class="shopSectionTitle">Shop @ Hacer</h1>
+
+        <div class="clothesDisplay">
+
+            <div class="cardRow">
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Masks</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">T-Shirts</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Premium Shorts</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Boxers</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Boxers</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardRow">
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Masks</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">T-Shirts</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Premium Shorts</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Boxers</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+                <div class="cardColumn">
+                    <div class="card">
+                        <div class="image">
+                            <div> </div>
+                        </div>
+                        <h1 class="title">Boxers</h1>
+                        <h3 class="price">Price: Rs. 750/-</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="moveArrows" onclick="scrollPage(6)">
+            <div class="downArrow3">V</div>
+            <div class="downArrow4">v</div>
+        </div>
+
+    </section>
+
+
+        <!-- This is the section of the third parallax of the frontpage -->
+
+    <section class= "parallax3">
+
+        <div class="textComponent">
+            <div class="parallax3MainText">
+                <h1>A choice for the alphas</h1>
+            </div>
+            <div class="moveArrows" onclick="scrollPage(7)">
+                <div class="downArrow1">V</div>
+                <div class="downArrow2">v</div>
+            </div> 
+        </div>
+
+               
+
+    </section>
+
+
+
+    <section class="messageFromBOD">
+
+        <div class="messageFromBODText">
+            <h1>Message From The Hacer Board</h1>
+            <p>
+                There is a voice that tells you that passion that you have for your dearm is far greater than any other force that try to stop you from what you will achieve. Not just achieve but what you own. You OWN that passion. You are an athlete, you OWN that race track. You are a sports person, you OWN that field. You are a swimmer, you OWN that pool. You are a showman, you OWN that show. You are thinker, you OWN that creativity....You are a winner... you own that victory.
+            </p> 
+                
+        </div>
+        
+        <div class="messageFromBODImages">
+            <img src="Images/FrontPage/messagefromBOD.png" alt="" srcset="">
+        </div>
+        
+        <p class= "endingText">Hacer..... Own it!</p>
+
+    </section>
+
+
+
+    <!-- Making th efooter section of the website -->
+
+    <section class="footerSection"> 
+
+        <footer>
+            <div class="footer-top">
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Shop </a></li>
+                    <li><a href="#">Contact </a></li>
+                </ul>
+            </div>  
+    
+            <div class="footer-mid">
+                <div class="footer-mid-left footer-mid-size">
+                    <h3>CONNECT WITH US</h3>
+                    <a href="https://www.facebook.com" target="_blank"><img src="Images/Icons/facebook.png" alt="fb icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="Images/Icons/instagram.png" alt="insta icon"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="Images/Icons/twitter.png" alt="twitter icon"></a>
+                    <a href="https://www.pinterest.com" target="_blank"><img src="Images/Icons/pinterest.png" alt="pinterest icon"></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="Images/Icons/linked in.png" alt="linked in icon"></a>
+                </div>
+     
+                <form class="footer-mid-center footer-mid-size" id="emailForNewsletter">
+                    <h3>Subscribe to our NEWSLETTER!</h3>
+                    <input type="email" placeholder="Your email here..." id="newsletterEmail">
+                    <button type="submit">Subscribe</button>
+                </form>
+    
+                <div class="footer-mid-right footer-mid-size">
+                    <h1>HACER</h1>
+                    <h3>OWN-IT!</h3>
+                    <h3>+977-9843-866-411</h3>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <span>&copy; Copyright 2020. </span>
+                <span> [HACER] </span>
+                <span>, All Rights Reserved.</span>
+            </div>
+        </footer>
+
+    </section>
+
+
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
